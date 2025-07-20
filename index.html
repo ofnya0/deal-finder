@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Deal Finder</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>🏘️ Deal Finder</h1>
+    <div class="filters">
+      <label>Min Lot Size (m²): <input type="number" id="lotSize"></label>
+      <label>Frontage (m): <input type="number" id="frontage"></label>
+      <label>Zoning: 
+        <select id="zoning">
+          <option value="">Any</option>
+          <option value="LDR">LDR</option>
+          <option value="MDR">MDR</option>
+          <option value="GRZ">GRZ</option>
+        </select>
+      </label>
+      <button onclick="applyFilters()">Search</button>
+    </div>
+    <div id="results"></div>
+    <script src="script.js"></script>
+  </body>
+</html>

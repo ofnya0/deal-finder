@@ -1,0 +1,20 @@
+[
+  {
+    "address": "123 Hawthorn St, East Brisbane",
+    "lotSize": 760,
+    "frontage": 18,
+    "zoning": "LDR"
+  },
+  {
+    "address": "98 Rosewood Ave, Norman Park",
+    "lotSize": 540,
+    "frontage": 15,
+    "zoning": "MDR"
+  },
+  {
+    "address": "45 Union Rd, Balmoral",
+    "lotSize": 660,
+    "frontage": 16,
+    "zoning": "GRZ"
+  }
+]

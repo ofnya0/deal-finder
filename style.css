@@ -1,0 +1,14 @@
+body {
+  font-family: sans-serif;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+h1 { color: #333; }
+.filters { margin-bottom: 20px; }
+label { margin-right: 15px; }
+.card {
+  background: white;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-left: 5px solid #0077cc;
+}
