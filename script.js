@@ -12,11 +12,19 @@ async function applyFilters() {
     (!zoning || site.zoning === zoning)
   );
 
-  document.getElementById('results').innerHTML = filtered.map(site => `
-    <div class="card">
-      <h3>${site.address}</h3>
-      <p>Size: ${site.lotSize}m² | Frontage: ${site.frontage}m</p>
-      <p>Zoning: ${site.zoning}</p>
-    </div>
-  `).join('');
+document.getElementById('results').innerHTML = filtered.map(site => `
+  <div class="card">
+    <h3>${site.address}</h3>
+    <img src="${site.sketch}" alt="Sketch for ${site.address}" class="sketch">
+    <p>Size: ${site.lotSize}m² | Frontage: ${site.frontage}m</p>
+    <p>Zoning: ${site.zoning}</p>
+  </div>
+`).join('');
+
+const zoneSketchMap = {
+  "LDR": "https://via.placeholder.com/400x250?text=2x3BR+Concept",
+  "MDR": "https://via.placeholder.com/400x250?text=3BR+4BR+Concept",
+  "GRZ": "https://via.placeholder.com/400x250?text=Split-Level+Design"
+};
+site.sketch = zoneSketchMap[site.zoning] || defaultSketchURL;
 }
