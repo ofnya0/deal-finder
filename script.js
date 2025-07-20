@@ -27,4 +27,7 @@ const zoneSketchMap = {
   "GRZ": "https://via.placeholder.com/400x250?text=Split-Level+Design"
 };
 site.sketch = zoneSketchMap[site.zoning] || defaultSketchURL;
+
+<img src="${site.sketch}" alt="Sketch for ${site.address}" class="sketch">
+
 }
