@@ -5,69 +5,69 @@
   "lotSize": 810,
   "frontage": 18,
   "zoning": "LDR",
-  "sketch": "https://via.placeholder.com/400x250?text=2x3BR+Concept"
+  "sketch": "https://placehold.co/400x250?text=2x3BR+Concept"
   },
   {
     "address": "27 Mowbray Tce, East Brisbane",
     "lotSize": 685,
     "frontage": 16,
     "zoning": "MDR",
-    "sketch": "https://via.placeholder.com/400x250?text=Concept+Sketch"
+    "sketch": "https://placehold.co/400x250?text=3BR+4BR+Mix"
   },
   {
     "address": "88 Geelong St, East Brisbane",
     "lotSize": 925,
     "frontage": 20,
     "zoning": "LDR",
-    "sketch": "https://via.placeholder.com/400x250?text=Concept+Sketch"
+    "sketch": "https://placehold.co/400x250?text=2x3BR+Concept"
   },
   {
     "address": "41 Vulture St, Kangaroo Point",
     "lotSize": 540,
     "frontage": 14,
     "zoning": "GRZ",
-    "sketch": "https://via.placeholder.com/400x250?text=Concept+Sketch"
+    "sketch": "https://placehold.co/400x250?text=Split-Level+Design"
   },
   {
     "address": "16 Heidelberg St, East Brisbane",
     "lotSize": 755,
     "frontage": 17,
     "zoning": "LDR",
-    "sketch": "https://via.placeholder.com/400x250?text=Concept+Sketch"
+    "sketch": "https://placehold.co/400x250?text=2x3BR+Concept"
   },
   {
     "address": "93 Merton Rd, Woolloongabba",
     "lotSize": 600,
     "frontage": 15,
     "zoning": "MDR",
-    "sketch": "https://via.placeholder.com/400x250?text=Concept+Sketch"
+    "sketch": "https://placehold.co/400x250?text=3BR+4BR+Mix"
   },
   {
     "address": "59 Norman St, East Brisbane",
     "lotSize": 660,
     "frontage": 15,
     "zoning": "LDR",
-    "sketch": "https://via.placeholder.com/400x250?text=Concept+Sketch"
+    "sketch": "https://placehold.co/400x250?text=2x3BR+Concept"
   },
   {
     "address": "105 Wynnum Rd, Norman Park",
     "lotSize": 870,
     "frontage": 19,
     "zoning": "GRZ",
-    "sketch": "https://via.placeholder.com/400x250?text=Concept+Sketch"
+    "sketch": "https://placehold.co/400x250?text=Split-Level+Design"
   },
   {
     "address": "22 Lahey Ln, Balmoral",
     "lotSize": 700,
     "frontage": 16,
     "zoning": "MDR",
-    "sketch": "https://via.placeholder.com/400x250?text=Concept+Sketch"
+    "sketch": "https://placehold.co/400x250?text=3BR+4BR+Mix"
   },
   {
     "address": "3 Princess St, Kangaroo Point",
     "lotSize": 980,
     "frontage": 21,
     "zoning": "LDR",
-    "sketch": "https://via.placeholder.com/400x250?text=Concept+Sketch"
+    "sketch": "https://placehold.co/400x250?text=2x3BR+Concept"
   }
 ]
