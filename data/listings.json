@@ -1,20 +1,62 @@
 [
   {
-    "address": "123 Hawthorn St, East Brisbane",
-    "lotSize": 760,
+    "address": "12 Latrobe St, East Brisbane",
+    "lotSize": 810,
     "frontage": 18,
     "zoning": "LDR"
   },
   {
-    "address": "98 Rosewood Ave, Norman Park",
+    "address": "27 Mowbray Tce, East Brisbane",
+    "lotSize": 685,
+    "frontage": 16,
+    "zoning": "MDR"
+  },
+  {
+    "address": "88 Geelong St, East Brisbane",
+    "lotSize": 925,
+    "frontage": 20,
+    "zoning": "LDR"
+  },
+  {
+    "address": "41 Vulture St, Kangaroo Point",
     "lotSize": 540,
+    "frontage": 14,
+    "zoning": "GRZ"
+  },
+  {
+    "address": "16 Heidelberg St, East Brisbane",
+    "lotSize": 755,
+    "frontage": 17,
+    "zoning": "LDR"
+  },
+  {
+    "address": "93 Merton Rd, Woolloongabba",
+    "lotSize": 600,
     "frontage": 15,
     "zoning": "MDR"
   },
   {
-    "address": "45 Union Rd, Balmoral",
+    "address": "59 Norman St, East Brisbane",
     "lotSize": 660,
-    "frontage": 16,
+    "frontage": 15,
+    "zoning": "LDR"
+  },
+  {
+    "address": "105 Wynnum Rd, Norman Park",
+    "lotSize": 870,
+    "frontage": 19,
     "zoning": "GRZ"
+  },
+  {
+    "address": "22 Lahey Ln, Balmoral",
+    "lotSize": 700,
+    "frontage": 16,
+    "zoning": "MDR"
+  },
+  {
+    "address": "3 Princess St, Kangaroo Point",
+    "lotSize": 980,
+    "frontage": 21,
+    "zoning": "LDR"
   }
 ]
