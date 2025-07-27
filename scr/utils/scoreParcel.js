@@ -7,32 +7,50 @@
  * @returns {number} Parcel score
  */
 function scoreParcel(parcel) {
+  if (!parcel || typeof parcel !== 'object') return 0;
+
+  const {
+    size,
+    frontage,
+    zoning,
+    slope,
+    overlays,
+    floodZone,
+    heritageListed
+  } = parcel;
+
+  // Validation
+  if (!size || !frontage || !zoning) {
+    console.warn('Missing parcel attributes:', parcel);
+    return 0;
+  }
+
   let score = 0;
 
-  // ✅ Zoning logic
-  if (parcel.zone === 'LMR') score += 10;
-  else if (parcel.zone === 'MDR') score += 5;
+  // 🧭 Zoning weight
+  const zoneWeights = { 'LDR': 1, 'MDR': 2, 'GRZ': 3 };
+  score += zoneWeights[zoning.trim().toUpperCase()] ?? -5;
+
+  // 📏 Frontage
+  if (frontage >= 10) score += 5;
+  else if (frontage >= 7.5) score += 2;
+
+  // 🧮 Slope
+  if (slope <= 5) score += 5;
+  else if (slope <= 10) score += 2;
   else score -= 5;
 
-  // 📏 Frontage logic
-  if (parcel.frontage >= 10) score += 5;
-  else if (parcel.frontage >= 7.5) score += 2;
-
-  // 🧮 Slope logic
-  if (parcel.slope <= 5) score += 5;
-  else if (parcel.slope <= 10) score += 2;
-  else score -= 5;
-
-  // 🏘️ Overlay penalties
-  if (parcel.overlays?.includes('character')) score -= 5;
+  // 🏘️ Overlays
+  if (overlays?.includes('character')) score -= 5;
 
   // 🌊 Flood zone
-  if (parcel.floodZone) score -= 5;
+  if (floodZone) score -= 5;
 
-  // 🏛️ Heritage listing
-  if (parcel.heritageListed) score -= 10;
+  // 🏛️ Heritage
+  if (heritageListed) score -= 10;
 
   return score;
 }
+
 
 module.exports = scoreParcel;

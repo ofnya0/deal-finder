@@ -1,0 +1,25 @@
+{
+  "name": "deal-finder",
+  "version": "1.0.0",
+  "main": "script.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "echo '👷 Betty build complete' && echo You can add real build logic here"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ofnya0/deal-finder.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ofnya0/deal-finder/issues"
+  },
+  "homepage": "https://github.com/ofnya0/deal-finder#readme",
+  "description": ""
+}

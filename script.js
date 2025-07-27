@@ -7,7 +7,12 @@ async function applyFilters() {
   const zoning = document.getElementById('zoning').value.toUpperCase();
   const builderBettyThreshold = 15;
 const bettyParcels = listings
-  .map(parcel => ({ ...parcel, score: scoreParcel(parcel) }))
+  .map(parcel => {
+  const scored = { ...parcel, score: scoreParcel(parcel) };
+  console.log('🏗️ Betty Parcel:', scored.address, 'Score:', scored.score);
+  return scored;
+})
+
   .filter(parcel => parcel.score >= builderBettyThreshold);
 
 
@@ -15,7 +20,7 @@ const useBetty = document.getElementById('bettyToggle').checked;
 const filtered = useBetty
   ? bettyParcels
   : listings.filter(site =>
-      site.lotSize >= lotSize &&
+      site.size >= lotSize &&
       site.frontage >= frontage &&
       (!zoning || site.zoning.toUpperCase() === zoning)
     );
@@ -31,7 +36,7 @@ const filtered = useBetty
     <div class="card">
       <h3>${site.address}</h3>
       <img src="${site.sketch}" alt="Sketch for ${site.address}" class="sketch">
-      <p>Size: ${site.lotSize}m² | Frontage: ${site.frontage}m</p>
+      <p>Size: ${site.size}m² | Frontage: ${site.frontage}m</p>
       <p>Zoning: ${site.zoning}</p>
       ${site.score >= builderBettyThreshold ? '<p class="betty-badge">🏗️ Builder Betty Approved</p>' : ''}
     </div>
