@@ -1,3 +1,5 @@
+import { scoreParcel } from './src/utils/scoreParcel.js';
+
 async function applyFilters() {
   try {
     const res = await fetch('listings.json');
