@@ -50,4 +50,5 @@ async function applyFilters() {
     console.error('❌ Fetch error:', err);
     document.getElementById('results').innerHTML = `<p>⚠️ Error loading listings</p>`;
   }
+  window.applyFilters = applyFilters;
 }
