@@ -1,4 +1,4 @@
-import { scoreParcel } from './src/utils/scoreParcel.js';
+import { scoreParcel } from './scoreParcel.js';
 
 async function applyFilters() {
   try {
