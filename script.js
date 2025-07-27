@@ -16,7 +16,7 @@ async function applyFilters() {
     const lotSize = Number(document.getElementById('lotSize').value) || 0;
     const frontage = Number(document.getElementById('frontage').value) || 0;
     const zoning = document.getElementById('zoning').value.toUpperCase();
-    const builderBettyThreshold = 15;
+    const builderBettyThreshold = 10;
 
     const useBetty = document.getElementById('bettyToggle').checked;
 
