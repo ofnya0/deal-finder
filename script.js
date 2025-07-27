@@ -1,6 +1,6 @@
 async function applyFilters() {
   try {
-    const res = await fetch('data/listings.json');
+    const res = await fetch('listings.json');
     if (!res.ok) throw new Error('Failed to fetch listings');
     const listings = await res.json();
 
