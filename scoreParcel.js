@@ -8,7 +8,7 @@ export function scoreParcel(parcel) {
   if (!parcel || typeof parcel !== 'object') return 0;
 
   const {
-    lotSize,
+    lotSize: size,
     frontage,
     zoning,
     slope = 0,
@@ -17,7 +17,7 @@ export function scoreParcel(parcel) {
     heritageListed = false
   } = parcel;
 
-  if (!lotSize || !frontage || !zoning) {
+  if (!size || !frontage || !zoning) {
     console.warn('⚠️ Missing parcel attributes:', parcel);
     return 0;
   }
